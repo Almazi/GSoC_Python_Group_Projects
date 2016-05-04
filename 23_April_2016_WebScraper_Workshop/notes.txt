@@ -1,0 +1,17 @@
+bs4 = beautiful soup 4 is the html parse
+soup = BeautifulSoup(page.text)
+soup.find_all('h1')[0] #as we are getting a list of python after finding h1
+
+breakdown of line #15 soup = BeautifulSoup(page.text, "lxml")
+all_h1 = soup.find_all('h1') taking all h1 but not properly parsed
+
+some 'p' texts can be out of main class or from any other/more than one classes in html script. 
+so there should be a better way to parse rather than soup.find_all('p')[0].text
+
+"www.fb.com".split('.')
+joined = ".".join(split)
+
+-*- coding: utf-8 -*- is a magic shebang line
+
+
+to find any separate section use find()
